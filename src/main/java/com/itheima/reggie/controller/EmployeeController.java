@@ -22,6 +22,12 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
+    /**
+     * 员工登录
+     * @param request
+     * @param emp
+     * @return
+     */
     @PostMapping("/login")
     public R<Employee> login(HttpServletRequest request, @RequestBody Employee emp) {
         // 1.将用户名md5加密
@@ -49,5 +55,11 @@ public class EmployeeController {
 
         request.getSession().setAttribute("employee", empI.getId());
         return R.success(empI);
+    }
+
+    @PostMapping("/logout")
+    public R<String> logout(HttpServletRequest request) {
+        request.getSession().removeAttribute("employee");
+        return R.success("退出成功");
     }
 }
