@@ -1,4 +1,9 @@
 package com.itheima.reggie.mapper;
 
-public class EmployeeMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.itheima.reggie.entity.Employee;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public abstract class EmployeeMapper implements BaseMapper<Employee> {
 }
