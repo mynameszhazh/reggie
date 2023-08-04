@@ -6,6 +6,8 @@ function loginApi(data) {
     })
   }
 
+
+
 function loginoutApi() {
   return $axios({
     'url': '/user/loginout',
