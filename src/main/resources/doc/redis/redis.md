@@ -21,3 +21,13 @@
     - `make install`
 ###  window
 > 一般下载的安装包 都能直接运行
+
+
+## 使用 redis
+> java中
+
+### jedis 
+> 传统的使用方法 他会通过类的方式去操作 我的 `redis` 服务器
+
+### starter 
+> spring-boot-starter-data-redis (pom)
