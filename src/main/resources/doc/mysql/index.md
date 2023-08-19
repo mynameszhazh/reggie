@@ -65,3 +65,8 @@ show slave status;
 - 配置读写分离规则
 - 允许bean定义覆盖配置项
 - 引入特定的 `DataSource` 操作就哦了
+
+
+## 基本操作
+### 重启数据库
+> service mysqld restart
