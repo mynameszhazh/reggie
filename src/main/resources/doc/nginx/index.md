@@ -41,3 +41,6 @@ upstream targetserver {
 // http location 块中使用
 proxy_pass http://targetserver
 ```
+
+## 运行
+- sbin 目录下面 ` ./nginx -s reload `
